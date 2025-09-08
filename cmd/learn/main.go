@@ -37,4 +37,6 @@ func main(){
 
 	// const myVar string = foo();
 	// fmt.Println(myVar)
+
+	functions()
 }
