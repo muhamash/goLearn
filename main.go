@@ -1,11 +1,15 @@
 package main
 
-import "goLearn/cmd/code"
+import (
+	"fmt"
+	"goLearn/cmd/code"
+)
 
 func main(){
 
 	// dataTypes()
 	// functions()
 	// arraySliceMapsLoops()
-	code.SliceCapacitySpeedTest()
+	// code.SliceCapacitySpeedTest()
+	fmt.Println(code.FindClosest(2,7,4))
 }
