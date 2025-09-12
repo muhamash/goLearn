@@ -6,17 +6,12 @@ import (
 )
 
 func main(){
-	nums := []int{3, 2, 2, 3}
-    val := 3
-    k := code.RemoveElement(nums, val)
+	// nums := []int{1,3,5,6}
 
-    fmt.Println("k =", k)             
-    fmt.Println("nums =", nums[:k])  
+    fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 5)) // Output: 2
+	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 2)) // Output: 1
+	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 7)) // Output: 4
+	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 0)) // Output: 0)             
 
-    nums2 := []int{0, 1, 2, 2, 3, 0, 4, 2}
-    val2 := 2
-    k2 := code.RemoveElement(nums2, val2)
 
-    fmt.Println("k2 =", k2)           
-    fmt.Println("nums2 =", nums2[:k2])
 }
