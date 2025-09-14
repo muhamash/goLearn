@@ -6,12 +6,17 @@ import (
 )
 
 func main(){
-	// nums := []int{1,3,5,6}
+	
+	wordlist1 := []string{"KiTe", "kite", "hare", "Hare"}
+	queries1 := []string{"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"}
+	fmt.Println(code.SpellChecker(wordlist1, queries1))
+	// Output: ["kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"]
 
-    fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 5)) // Output: 2
-	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 2)) // Output: 1
-	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 7)) // Output: 4
-	fmt.Println(code.SearchInsert([]int{1, 3, 5, 6}, 0)) // Output: 0)             
+	// Example 2
+	wordlist2 := []string{"yellow"}
+	queries2 := []string{"YellOw"}
+	fmt.Println(code.SpellChecker(wordlist2, queries2))
+	// Output: ["yellow"]
 
 
 }
